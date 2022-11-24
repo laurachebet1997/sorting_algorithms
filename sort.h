@@ -14,9 +14,9 @@
  */
 typedef struct listint_s
 {
-  const int n;
-  struct listint_s *prev;
-  struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /**
@@ -28,12 +28,12 @@ typedef struct listint_s
  */
 
 typedef enum kind_e
-  {
-    SPADE = 0,
-    HEART,
-    CLUB,
-    DIAMOND
-  } kind_t;
+{
+	SPADE = 0,
+	HEART,
+	CLUB,
+	DIAMOND
+} kind_t;
 
 /**
  * struct card_s - Playing card
@@ -44,8 +44,8 @@ typedef enum kind_e
  */
 typedef struct card_s
 {
-  const char *value;
-  const kind_t kind;
+	const char *value;
+	const kind_t kind;
 } card_t;
 
 /**
@@ -57,9 +57,9 @@ typedef struct card_s
  */
 typedef struct deck_node_s
 {
-  const card_t *card;
-  struct deck_node_s *prev;
-  struct deck_node_s *next;
+	const card_t *card;
+	struct deck_node_s *prev;
+	struct deck_node_s *next;
 } deck_node_t;
 
 void print_array(const int *array, size_t size);
