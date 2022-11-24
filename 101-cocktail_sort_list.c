@@ -1,10 +1,10 @@
 #include "sort.h"
 /**
- *cocktail_sort_list - sort array with cocktail sort algorithm
- *swap_list - sort lists
- *@i: pointer for swap function
- *@aux: pointer too
- *@list: pointer to the list
+ * swap_list - sort lists
+ * cocktail_sort_list - sort array with cocktail sort algorithm
+ * @i: pointer for swap function
+ * @aux: pointer too
+ * @list: pointer to the list
  */
 void swap_list(listint_t *i, listint_t *aux, listint_t **list)
 {
