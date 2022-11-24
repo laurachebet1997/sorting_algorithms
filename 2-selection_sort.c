@@ -15,7 +15,7 @@ while (i < size)
 {
 aux = array[i];
 aux2 = j = i + 1;
-while (j < size) 
+while (j < size)
 {
 if (aux > array[j])
 {

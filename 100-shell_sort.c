@@ -23,7 +23,7 @@ if (array[i] > array[i + aux])
 temp = array[i];
 array[i] = array[i + aux];
 array[i + aux] = temp;
-flag = 1
+flag = 1;
 }
 }
 if (flag == 0)

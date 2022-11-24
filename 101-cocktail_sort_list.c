@@ -13,14 +13,14 @@ while(j == 1)
 for (i = *list; i != NULL; i = i->next)
 {
 while (i->next != NULL && i->n > i->next->n)
-swap_list(i->next, aux, list);
+void swap_list(i->next, aux, list);
 if (i->next == NULL)
 break;
 }
 for (; i != NULL; i = i->prev)
 {
 while (i->prev != NULL && i->n < i->prev->n)
-swap_list(i, aux, list);
+void swap_list(i, aux, list);
 if (i->prev == NULL)
 break;
 }
