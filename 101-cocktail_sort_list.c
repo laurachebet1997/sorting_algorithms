@@ -1,13 +1,16 @@
 #include "sort.h"
 /**
  *cocktail_sort_list - sort array with cocktail sort algorithm
+ *swap_list - sort lists
+ *@i: pointer for swap function
+ *@aux: pointer too
  *@list: pointer to the list
  */
 void swap_list(listint_t *i, listint_t *aux, listint_t **list)
 {
-if(i->next != NULL)
+if (i->next != NULL)
 i->next->prev = i->prev;
-if(i->prev->prev != NULL)
+if (i->prev->prev != NULL)
 i->prev->prev->next = i;
 else
 *list = i;
@@ -24,7 +27,7 @@ void cocktail_sort_list(listint_t **list)
 listint_t *i, *aux;
 int j = 1;
 
-while(j == 1)
+while (j == 1)
 {
 for (i = *list; i != NULL; i = i->next)
 {
@@ -40,7 +43,7 @@ swap_list(i, aux, list);
 if (i->prev == NULL)
 break;
 }
-for(aux = *list; j == 1; aux = aux->next)
+for (aux = *list; j == 1; aux = aux->next)
 {
 if (aux->next == NULL)
 return;
